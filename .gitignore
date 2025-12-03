@@ -1,71 +1,42 @@
-# Compiled files
-/dist
-/build
-/node_modules
+# Python Specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+*.env
 
-# Log files
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Build/Distribution
+dist/
+build/
+*.egg
+*.whl
 
-# IDE specific files
+# Testing/Coverage
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Editor/IDE Files
 .vscode/
 .idea/
-*.iml
-*.DS_Store
+*.swp
+*.swo
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Logs and Data
+*.log
+*.sqlite3
 
-# Build artifacts
-.cache/
-coverage/
+# Node/Vite/Frontend Artifacts (If development touches frontend tooling)
+node_modules/
+/dist
+.vite-cache/
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Python cache and virtual environments
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-venv/
-.venv/
-env/
-.envrc
-.direnv/
-
-# Ruff cache
-.ruff_cache/
-
-# uv cache
-.uv/
-
-# Pytest cache
-.pytest_cache/
-
-# IDE specific configuration
-.project
-.classpath
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Docker
-docker-compose.yml.save
-*.dockerignore
-Dockerfile.save
-
-# Frontend build tools (example, if applicable in future)
-# dist/
-# public/build/
-
-# Secrets (ensure these are never committed)
-*.secret
-secrets.json
+# Configuration files (sensitive or build-generated)
+/secrets.json
+/config.local.json
