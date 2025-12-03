@@ -1,83 +1,121 @@
-# Contributing to MultiSearch AI Search Aggregator
+# Contributing to MetaMind-Unified-AI-Search-Engine-Web-App
 
-First, thank you for considering contributing to this project. We adhere to the highest industry standards to maintain a clean, scalable, and resilient codebase. This document outlines the contribution workflow and the principles we follow.
+Thank you for your interest in contributing to **MetaMind-Unified-AI-Search-Engine-Web-App**! We aim to foster a collaborative environment built on the principles of Zero-Defect, High-Velocity, and Future-Proof development.
 
-## 🚀 Contribution Philosophy
+## 1. Code of Conduct
 
-We operate on a "Zero-Defect, High-Velocity" model. Every contribution must enhance the project's value and align with its long-term architectural vision. We expect professional conduct and a commitment to quality from all contributors.
+This project adheres to the Contributor Covenant Code of Conduct. Please read the full [CODE_OF_CONDUCT.md](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/blob/main/CODE_OF_CONDUCT.md) to understand what actions are considered unacceptable.
 
-All contributors are expected to abide by our [Code of Conduct](./CODE_OF_CONDUCT.md).
+## 2. How to Contribute
 
-## 🛠️ Core Development Principles
+We welcome contributions in the form of bug reports, feature requests, documentation improvements, and code contributions.
 
-- **Feature-Sliced Design (FSD):** We use FSD for a scalable and maintainable frontend architecture. Ensure your contributions are organized correctly within this structure.
-- **SOLID, DRY, YAGNI:** Adhere strictly to these foundational software design principles.
-- **Static Typing:** TypeScript is used with `strict` mode enabled. All contributions must be strongly typed.
+### 2.1. Reporting Bugs
 
-## Workflow & Setup
+1.  **Search Existing Issues:** Before reporting, please check if the issue has already been reported. 
+2.  **Create a Detailed Report:** If it's a new bug, please open a new issue using the `Bug Report` template. Include:
+    *   A clear and concise title.
+    *   Steps to reproduce the bug.
+    *   The expected behavior vs. the actual behavior.
+    *   Environment details (OS, browser, versions).
+    *   Screenshots or recordings if applicable.
+    *   Relevant logs.
 
-### 1. Initial Setup
+### 2.2. Suggesting Features
 
-1.  **Fork the Repository:** Create your own fork of the repository at `https://github.com/chirag127/MultiSearch-AI-Search-Aggregator-Web-App`.
-2.  **Clone Your Fork:**
+1.  **Search Existing Features:** Check if your feature request already exists.
+2.  **Open a Feature Request:** If it's a new idea, please open a new issue using the `Feature Request` template. Explain:
+    *   The problem you are trying to solve.
+    *   Your proposed solution.
+    *   Why this feature would be valuable to users.
+
+### 2.3. Contributing Code
+
+Follow these steps to contribute code:
+
+1.  **Fork the Repository:** Create your own fork of the `chirag127/MetaMind-Unified-AI-Search-Engine-Web-App` repository.
+2.  **Clone Your Fork:** Clone your forked repository to your local machine:
     bash
-    git clone https://github.com/<YOUR_USERNAME>/MultiSearch-AI-Search-Aggregator-Web-App.git
-    cd MultiSearch-AI-Search-Aggregator-Web-App
+    git clone https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App.git
+    cd MetaMind-Unified-AI-Search-Engine-Web-App
     
-3.  **Install Dependencies:** We use `pnpm` for efficient package management.
+3.  **Set Up Development Environment:** Follow the setup instructions in the `README.md` file to install dependencies and set up the project.
+    *   **Technology Stack:** TypeScript 6.x (Strict), Vite 7 (Rolldown), TailwindCSS v4, React 19, Biome (Linter/Formatter), Vitest (Unit Testing), Playwright (E2E Testing).
+    *   **Architecture:** Feature-Sliced Design (FSD).
+4.  **Create a New Branch:** Branch out from the `main` branch for your new feature or bug fix:
     bash
-    pnpm install
+    git checkout -b feature/your-feature-name
+    # or
+    git checkout -b bugfix/your-bug-fix-name
     
-
-### 2. Branching Strategy
-
-All work must be done in a feature branch created from the `main` branch. Use the following naming convention:
-
--   `feature/<description>` for new features (e.g., `feature/add-perplexity-integration`)
--   `bugfix/<issue-number>-<description>` for bug fixes (e.g., `bugfix/112-fix-result-parsing`)
--   `chore/<description>` for maintenance tasks (e.g., `chore/update-dependencies`)
-
-### 3. Making Changes & Ensuring Quality
-
-1.  **Write Code:** Implement your feature or fix, adhering to the architectural principles.
-2.  **Format & Lint:** We use **Biome** for instantaneous formatting and linting. Run it before every commit.
+5.  **Make Your Changes:** Implement your changes, ensuring they adhere to the project's coding standards and architectural guidelines.
+6.  **Run Tests:** Ensure all tests pass:
     bash
-    # Format and apply safe linting fixes
-    pnpm format
-
-    # Check for remaining linting issues
-    pnpm lint
+    # Install dependencies
+    npm install
+    # Run linters and formatters
+    npm run lint
+    # Run unit tests
+    npm run test:unit
+    # Run E2E tests
+    npm run test:e2e
     
-3.  **Run Tests:** All contributions must be accompanied by relevant unit and integration tests using **Vitest**. Ensure all tests pass.
+7.  **Commit Your Changes:** Commit your changes with clear and descriptive commit messages.
     bash
-    pnpm test
+    git add .
+    git commit -m "feat: Add user authentication for search results"
     
+8.  **Push to Your Fork:** Push your branch to your fork on GitHub:
+    bash
+    git push origin feature/your-feature-name
+    
+9.  **Open a Pull Request:** Submit a pull request to the `main` branch of the `chirag127/MetaMind-Unified-AI-Search-Engine-Web-App` repository.
+    *   Clearly describe your changes.
+    *   Reference any related issues.
+    *   Ensure your pull request adheres to the [Pull Request Template](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/blob/main/.github/PULL_REQUEST_TEMPLATE.md).
 
-### 4. Commit Convention
+## 3. Development Standards & Principles
 
-We enforce **Conventional Commits**. This is critical for automated versioning and changelog generation. Your commit messages must be structured as follows:
+*   **Apex Philosophy:** Zero-Defect, High-Velocity, Future-Proof.
+*   **Naming Convention:** Follow the `Title-Case-With-Hyphens` convention (e.g., `MetaMind-Unified-AI-Search-Engine-Web-App`).
+*   **Architecture:** Feature-Sliced Design (FSD) for maintainability and scalability.
+*   **Coding Standards:** Strict TypeScript, modern React patterns, and Tailwind CSS for styling.
+*   **Linting & Formatting:** Utilize Biome for consistent code style and quality. Run `npm run lint` before committing.
+*   **Testing:** Comprehensive unit tests with Vitest and end-to-end tests with Playwright. Aim for high test coverage.
+*   **SOLID Principles:** Adhere to SOLID principles for robust and maintainable object-oriented design.
+*   **DRY (Don't Repeat Yourself):** Avoid redundant code.
+*   **YAGNI (You Aren't Gonna Need It):** Implement only what is necessary currently.
+
+## 4. Project Structure (Feature-Sliced Design - FSD)
+
+mermaid
+graph TD
+    A[App: Root application layer]
+    B[Pages: Routing and page-level components]
+    C[Widgets: Composite UI components]
+    D[Features: Independent features (e.g., Search, History)]
+    E[Entities: Core business entities]
+    F[Shared: Reusable UI, utilities, constants]
+
+    A --> B
+    B --> C
+    B --> D
+    C --> D
+    D --> E
+    D --> F
+    E --> F
 
 
-<type>[optional scope]: <description>
+## 5. AI Agent Directives
 
-[optional body]
+Refer to the [AGENTS.md](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/blob/main/AGENTS.md) file for specific AI agent configurations and directives pertinent to this project.
 
-[optional footer]
+## 6. Getting Help
 
+If you have questions or need assistance, please:
 
-**Example:** `feat(api): add support for new search provider`
+*   Check the [README.md](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/blob/main/README.md) for common setup and usage information.
+*   Search existing [Issues](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/issues).
+*   Open a new issue if you cannot find an answer.
 
-### 5. Submitting a Pull Request
-
-1.  Push your feature branch to your fork.
-2.  Open a Pull Request against the `main` branch of the upstream repository.
-3.  Fill out the [Pull Request Template](./PULL_REQUEST_TEMPLATE.md) completely.
-4.  Link the PR to any relevant issues.
-5.  Ensure all CI checks pass. A maintainer will review your PR after all checks are green.
-
-## 🐛 Reporting Bugs and Suggesting Features
-
--   **Bug Reports:** Use the [Bug Report Template](https://github.com/chirag127/MultiSearch-AI-Search-Aggregator-Web-App/issues/new?template=bug_report.md) to file a bug. Provide detailed steps to reproduce the issue.
--   **Feature Requests:** Use the [Feature Request Template](https://github.com/chirag127/MultiSearch-AI-Search-Aggregator-Web-App/issues/new?template=feature_request.md) to suggest new functionality.
-
-Thank you for your contribution. Let's build a best-in-class tool together.
+We look forward to your contributions!
