@@ -1,16 +1,59 @@
-badges:
+# .github/badges.yml
+# Configuration for repository badges displayed in the README.md.
+# This file centralizes badge management for consistency and easy updates.
+# Style: flat-square is mandatory for a modern, professional look.
+
+status:
   - name: "Build Status"
-    img: "https://img.shields.io/github/actions/workflow/user/chirag127/MultiSearch-AI-Search-Aggregator-Web-App/ci.yml?style=flat-square&logo=github-actions"
-    link: "https://github.com/chirag127/MultiSearch-AI-Search-Aggregator-Web-App/actions"
+    url: "https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/actions/workflows/ci.yml"
+    markdown: "[
+![Build Status](https://img.shields.io/github/actions/workflow/status/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/ci.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white)
+](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/actions/workflows/ci.yml)"
   - name: "Code Coverage"
-    img: "https://img.shields.io/codecov/c/github/chirag127/MultiSearch-AI-Search-Aggregator-Web-App?style=flat-square&logo=codecov"
-    link: "https://codecov.io/gh/chirag127/MultiSearch-AI-Search-Aggregator-Web-App"
-  - name: "Tech Stack"
-    img: "https://img.shields.io/badge/Tech%20Stack-HTML%2CVite%2CTailwindCSS%2CTauri-blue?style=flat-square&logo=visualstudio-code"
-    link: "#"
-  - name: "License: CC BY-NC 4.0"
-    img: "https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square&logo=creativecommons"
-    link: "https://creativecommons.org/licenses/by-nc/4.0/"
+    url: "https://codecov.io/gh/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App"
+    markdown: "[
+![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App?style=flat-square&logo=codecov&logoColor=white)
+](https://codecov.io/gh/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App)"
+
+tech_stack:
+  - name: "TypeScript"
+    url: "https://www.typescriptlang.org/"
+    markdown: "
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+"
+  - name: "React"
+    url: "https://reactjs.org/"
+    markdown: "
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+"
+  - name: "Vite"
+    url: "https://vitejs.dev/"
+    markdown: "
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+"
+  - name: "Tailwind CSS"
+    url: "https://tailwindcss.com/"
+    markdown: "
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+"
+
+code_style:
+  - name: "Biome Linter & Formatter"
+    url: "https://biomejs.dev/"
+    markdown: "
+![Biome](https://img.shields.io/badge/Linter_&_Formatter-Biome-60A5FA?style=flat-square&logo=biome&logoColor=white)
+"
+
+license:
+  - name: "License"
+    url: "https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/blob/main/LICENSE"
+    markdown: "[
+![License](https://img.shields.io/github/license/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App?style=flat-square&color=blue)
+](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/blob/main/LICENSE)"
+
+social:
   - name: "GitHub Stars"
-    img: "https://img.shields.io/github/stars/chirag127/MultiSearch-AI-Search-Aggregator-Web-App?style=flat-square&logo=github"
-    link: "https://github.com/chirag127/MultiSearch-AI-Search-Aggregator-Web-App/stargazers"
+    url: "https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/stargazers"
+    markdown: "[
+![GitHub Stars](https://img.shields.io/github/stars/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App?style=flat-square&logo=github&logoColor=white)
+](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/stargazers)"
