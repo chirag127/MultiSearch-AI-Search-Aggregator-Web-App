@@ -1,174 +1,147 @@
-# MultiSearch-AI-Search-Aggregator-Web-App
+# MetaMind-Unified-AI-Search-Engine-Web-App
 
-![Build Status](https://img.shields.io/github/actions/workflow/user/chirag127/MultiSearch-AI-Search-Aggregator-Web-App/ci.yml?style=flat-square&logo=github-actions)
-![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/MultiSearch-AI-Search-Aggregator-Web-App?style=flat-square&logo=codecov)
-![Tech Stack (HTML/CSS/JS)](https://img.shields.io/badge/Tech%20Stack-HTML%2FCSS%2FJS-informational?style=flat-square&logo=html5)
-![License](https://img.shields.io/github/license/chirag127/MultiSearch-AI-Search-Aggregator-Web-App?style=flat-square&logo=creativecommons)
-![GitHub Stars](https://img.shields.io/github/stars/chirag127/MultiSearch-AI-Search-Aggregator-Web-App?style=flat-square&logo=github)
+![Build Status](https://img.shields.io/github/actions/workflow/user/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/ci.yml?style=flat-square&logo=githubactions)
+![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App?style=flat-square&logo=codecov)
+![Tech Stack](https://img.shields.io/badge/TechStack-TypeScript%7CVite%7CTailwindCSS%7CReact-blue?style=flat-square&logo=javascript)
+![Linting](https://img.shields.io/badge/Lint--Formatting-Biome-critical?style=flat-square&logo=biome)
+![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-orange?style=flat-square&logo=creativecommons)
+![GitHub Stars](https://img.shields.io/github/stars/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App?style=flat-square&logo=github)
 
-## The Ultimate AI Search Aggregator
+### Star ⭐ this Repo
 
-MultiSearch empowers users by aggregating search results from multiple leading AI search engines into a single, unified interface. Enhance your search efficiency and discover more comprehensive insights with every query.
+## Unified AI Search Interface
 
-<details>
-<summary>🤖 AI Agent Directives</summary>
-
-## SYSTEM: APEX TECHNICAL AUTHORITY & ELITE ARCHITECT (DECEMBER 2025 EDITION)
-
-### 1. IDENTITY & PRIME DIRECTIVE
-**Role:** Senior Principal Software Architect and Master Technical Copywriter with **40+ years of elite industry experience**. Enforcing FAANG-level standards and the wisdom of "Managing the Unmanageable."
-**Context:** Current Date is **December 2025**. Building for the 2026 standard.
-**Output Standard:** **EXECUTION-ONLY**. No plans, no "reporting"—only executed code, updated docs, and applied fixes.
-**Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
-
-### 2. INPUT PROCESSING & COGNITION
-*   **SPEECH-TO-TEXT INTERPRETATION PROTOCOL:**
-    *   **Context:** User inputs may contain phonetic errors. **STRICTLY FORBIDDEN** from executing literal typos. **INFER** technical intent based on project context.
-    *   **Logic Anchor:** Treat the `README.md` as the **Single Source of Truth (SSOT)**.
-*   **MANDATORY MCP INSTRUMENTATION:**
-    *   **No Guessing:** Do not hallucinate APIs.
-    *   **Research First:** Use `linkup`/`brave` to search for **December 2025 Industry Standards**, **Security Threats**, and **2026 UI Trends**.
-    *   **Validation:** Use `docfork` to verify *every* external API signature.
-    *   **Reasoning:** Engage `clear-thought-two` to architect complex flows *before* writing code.
-
-### 3. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
-*   **PRIMARY SCENARIO: WEB / APP / EXTENSION (TypeScript/Web Technologies)**
-    *   **Stack:** This project utilizes **TypeScript 6.x** (Strict mode enforced), **Vite 7** (with Rolldown bundler) for rapid development and building, and **Tauri v2.x** for native desktop application packaging. The frontend employs **TailwindCSS v4** for utility-first styling and **Signals** for reactive state management.
-    *   **Architecture:** Adheres to **Feature-Sliced Design (FSD)**, promoting modularity, scalability, and maintainability. Components, features, and layers are clearly defined and independent.
-    *   **Testing:** Implements **Biome** (for ultra-fast linting and formatting), **Vitest** (for unit and integration testing), and **Playwright** (for end-to-end testing), ensuring comprehensive code quality and reliability.
-
-### 4. ARCHIVAL PROTOCOL (THE "RETIRED PRODUCT" STANDARD)
-*   **Mandate:** Even retired repositories are "Retired Products" and **MUST** be archived with the highest professional standard. Metadata (Name, Description, Topics) must be elevated. Tone: Dignified, historical, valuable. Never use "junk," "garbage," or "useless" in public descriptions.
-
-### 5. COMPLIANCE MANDATE (THE "STANDARD 11")
-*   **Requirement:** Every repository **MUST** appear professional and complete. The following files are mandatory:
-    *   `README.md` (Hero-Tier)
-    *   `PROPOSED_README.md` (Strictly following AGENTS.md)
-    *   `badges.yml` (Configuration)
-    *   `LICENSE` ("CC BY-NC")
-    *   `.gitignore`
-    *   `.github/workflows/ci.yml` (CI/CD)
-    *   `.github/CONTRIBUTING.md` (Contributing Guidelines)
-    *   `.github/ISSUE_TEMPLATE/bug_report.md` (Issue Templates)
-    *   `.github/PULL_REQUEST_TEMPLATE.md` (Pull Request Templates)
-    *   `.github/SECURITY.md` (Security Guidelines)
-    *   `AGENTS.md` (The Agent Directives)
-
-### 6. APEX NAMING CONVENTION (THE "STAR VELOCITY" ENGINE)
-*   **Formula:** `<Product-Name>-<Primary-Function>-<Platform>-<Type>`
-*   **Format:** `Title-Case-With-Hyphens`.
-*   **Rules:** 3-10 words, high-volume keywords, NO numbers/emojis/underscores/generic words without qualifiers.
-
-### 7. CHAIN OF THOUGHT (CoT) PROTOCOL
-*   **Pre-execution Analysis:** Perform deep audit, decide Pivot/Archive, apply Naming Strategy, draft `AGENTS.md` directives, plan File Generation, polish with Standard 11 and dynamic URLs. Strict adherence to `AGENTS.md` customization is paramount.
-
-### 8. DYNAMIC URL & BADGE PROTOCOL
-*   **Base URL:** `https://github.com/chirag127/<New-Repo-Name>`
-*   **Consistency:** All links and badges MUST use the new repository name dynamically.
-*   **AGENTS.md Customization:** Adapt sections to the repository's specific technology stack (e.g., Rust, Python, Web), retaining core Apex principles.
-
-</details>
+MetaMind aggregates AI-powered search results from multiple engines into a single, intuitive interface. Maximize search efficiency and discover comprehensive, cross-platform insights with a single query.
 
 ## Architecture Overview
 
 mermaid
 graph TD
-    A[User Interface (HTML/CSS/JS)] --> B(Frontend Logic / API Calls)
-    B --> C{Backend Service / Aggregation Engine}
+    A[User Interface (React/TypeScript)] --> B(API Gateway / Backend Service)
+    B --> C{Search Engine Orchestrator}
     C --> D1[AI Search Engine 1 API]
     C --> D2[AI Search Engine 2 API]
-    C --> D3[...
-    C --> Dn[AI Search Engine N API]
+    C --> D3[AI Search Engine N API]
     D1 --> C
     D2 --> C
     D3 --> C
-    Dn --> C
     C --> B
     B --> A
+
+    subgraph Backend Services
+        C
+        D1
+        D2
+        D3
+    end
+
+    subgraph Frontend
+        A
+    end
 
 
 ## Table of Contents
 
-*   [Features](#features)
-*   [Technology Stack](#technology-stack)
-*   [Getting Started](#getting-started)
-*   [Development](#development)
+*   [Architecture Overview](#architecture-overview)
+*   [AI Agent Directives](#ai-agent-directives-critical)
+*   [Development Standards](#development-standards)
+    *   [Project Setup](#project-setup)
+    *   [Scripts](#scripts)
+    *   [Core Principles](#core-principles)
 *   [Contributing](#contributing)
 *   [License](#license)
 
-## Features
+---
 
-*   **Unified Search Interface:** Query multiple AI search engines from one place.
-*   **Aggregated Results:** Consolidate and display results in a clear, comparative format.
-*   **Efficiency Boost:** Save time by eliminating repetitive searches across different platforms.
-*   **Customizable Engines:** (Future) Select which AI search engines to include in the aggregation.
+## 🤖 AI Agent Directives (Critical)
 
-## Technology Stack
+<details>
+<summary>View Agent Directives</summary>
 
-*   **Core:** HTML5, CSS3, JavaScript (ESNext)
-*   **Bundler/Build:** Vite 7 (Rolldown)
-*   **Packaging:** Tauri v2.x (for potential desktop applications)
-*   **Styling:** TailwindCSS v4
-*   **State Management:** Signals
-*   **Linting/Formatting:** Biome
-*   **Testing:** Vitest (Unit/Integration), Playwright (E2E)
+This repository is managed by the **Apex Technical Authority** (December 2025 Edition), operating under the Prime Directive: "Zero-Defect, High-Velocity, Future-Proof." The following directives ensure AI alignment, architectural integrity, and adherence to late 2025 standards.
 
-## Getting Started
+### **1. Identity & Prime Directive**
 
-### Prerequisites
+*   **Role:** Senior Principal Software Architect and Master Technical Copywriter (40+ years experience).
+*   **Context:** December 2025. Building for 2026 standards.
+*   **Output Standard:** **EXECUTION-ONLY**. No plans, only executed code, updated docs, and applied fixes.
+*   **Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
 
-*   Node.js (v18.x or higher recommended)
-*   npm or yarn
+### **2. Input Processing & Cognition**
 
-### Installation
+*   **Semantic Correction:** **STRICTLY FORBIDDEN** from executing literal typos. Must infer technical intent based on project context. `README.md` is the Single Source of Truth (SSOT).
+*   **Mandatory MCP Instrumentation:** No guessing APIs. Use `linkup`/`brave` for December 2025 industry standards, security threats, and 2026 UI trends. Verify external API signatures with `docfork`. Architect complex flows with `clear-thought-two` before coding.
 
-1.  **Clone the repository:**
+### **3. Context-Aware Apex Tech Stacks (Late 2025 Standards)**
+
+*   **Scenario:** WEB / APP / EXTENSION (TypeScript)
+    *   **Stack:** **TypeScript 6.x (Strict)**, **Vite 7 (Rolldown)**, **TailwindCSS v4**, **React 19**, **Tauri v2.x (for potential desktop expansion)**, **WXT (for browser extensions)**.
+    *   **State Management:** Signals (Standardized).
+    *   **Linting/Formatting:** **Biome** (speed and comprehensive coverage).
+    *   **Testing:** **Vitest** (Unit/Integration), **Playwright** (E2E).
+    *   **Architecture:** **Feature-Sliced Design (FSD)**.
+
+### **4. Verification Commands (Apex Standard)**
+
+*   **Lint & Format:** `npx @biomejs/biome format --write .`
+*   **Lint Check:** `npx @biomejs/biome check --apply .`
+*   **Unit Tests:** `npx vitest run`
+*   **E2E Tests:** `npx playwright test`
+*   **Build:** `npx vite build`
+*   **Local Dev Server:** `npx vite`
+
+### **5. Core Principles Enforcement**
+
+*   **SOLID:** Strict adherence to Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion.
+*   **DRY:** Do Not Repeat Yourself. Abstract common logic.
+*   **YAGNI:** You Ain't Gonna Need It. Build for current needs, not speculative future requirements.
+*   **KISS:** Keep It Simple, Stupid. Favor clarity and simplicity.
+
+</details>
+
+---
+
+## Development Standards
+
+### Project Setup
+
+1.  **Clone the Repository:**
     bash
-    git clone https://github.com/chirag127/MultiSearch-AI-Search-Aggregator-Web-App.git
-    cd MultiSearch-AI-Search-Aggregator-Web-App
+    git clone https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App.git
+    cd MetaMind-Unified-AI-Search-Engine-Web-App
     
 
-2.  **Install dependencies:**
+2.  **Install Dependencies:**
     bash
+    # Using npm (default for Vite)
     npm install
     
 
-## Development
-
-### Running the Development Server
-
-bash
-npm run dev
-
-
-This command starts the Vite development server, allowing you to see changes in real-time.
-
-### Build for Production
-
-bash
-npm run build
-
-
-This command creates an optimized build of your application in the `dist` folder.
-
 ### Scripts
 
-| Script      | Description                                  |
-| :---------- | :------------------------------------------- |
-| `dev`       | Run the development server.                  |
-| `build`     | Build the application for production.        |
-| `lint`      | Run Biome linter and formatter.              |
-| `test`      | Run Vitest unit and integration tests.       |
-| `e2e`       | Run Playwright end-to-end tests.             |
+| Script Name         | Description                                     |
+| :------------------ | :---------------------------------------------- |
+| `npm run dev`       | Starts the development server.                  |
+| `npm run build`     | Builds the application for production.          |
+| `npm run lint`      | Runs Biome linter and formatter checks.         |
+| `npm run test:unit` | Runs Vitest unit and integration tests.         |
+| `npm run test:e2e`  | Runs Playwright end-to-end tests.               |
+
+### Core Principles
+
+*   **SOLID:** We adhere to SOLID design principles for maintainable and scalable code.
+*   **DRY:** Logic duplication is actively refactored into reusable modules.
+*   **YAGNI:** Features are implemented only when they are strictly required.
+*   **KISS:** Simplicity and clarity are prioritized in all architectural decisions.
+
+---
 
 ## Contributing
 
-We welcome contributions! Please see the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file for detailed guidelines on how to submit pull requests and report issues.
+We welcome contributions! Please see the [CONTRIBUTING.md](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/blob/main/.github/CONTRIBUTING.md) file for detailed guidelines on how to submit your pull requests.
+
+---
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). See the [LICENSE](LICENSE) file for more details.
-
---- 
-
-Star ⭐ this Repo
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). See the [LICENSE](https://github.com/chirag127/MetaMind-Unified-AI-Search-Engine-Web-App/blob/main/LICENSE) file for more details.
